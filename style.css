@@ -1,0 +1,112 @@
+/* Estilo general */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #009fb4;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Menú desplegable */
+.menu-desplegable {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-desplegable input[type="checkbox"] {
+    display: none;
+}
+
+.menu-toggle {
+    display: inline-block;
+    color: white;
+    background-color: #444;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.menu-toggle:hover {
+    background-color: #555;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.submenu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+.menu-desplegable input[type="checkbox"]:checked ~ .submenu {
+    display: block;
+}
